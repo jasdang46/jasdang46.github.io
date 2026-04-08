@@ -1,0 +1,109 @@
+/*CSS DOCUMENT*/
+
+div.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 60em;
+    margin: auto;
+	min-height: 100vh;
+	column-gap: 1em;
+}
+
+.parent-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+header {
+	padding-left: 1px;
+	flex: 1 0 100%;
+}
+h1, h2 {
+	color: rgb(34, 34, 34);
+	margin-top: 2em;
+	padding: 0;
+}
+
+h3 {
+	color: rgb(34, 34, 34);
+	margin: 0;
+	padding: 0;
+
+}
+
+ol {
+	padding-left: 0;
+}
+ol li {
+	margin-bottom: 1em;
+}
+a {
+	color: rgb(34, 34, 34);
+	text-decoration: none;
+}
+
+p {
+	color: rgb(34, 34, 34);
+	padding: 0 0 0 0;
+	margin: 0;
+	line-height: 1.5em;
+
+}
+body {
+	font-family: sans-serif;
+	line-height: 1.4em;
+	color: rgb(34, 34, 34);
+	background-color: rgb(250, 250, 250);
+	box-sizing: border-box;
+	margin: 0 1.5em 0 0.5em;
+	padding: 0;
+	}
+
+img {
+	width: 100%;
+	padding-bottom: 1em;
+	}
+
+article{
+    flex: 2 0 30em;
+}
+section{
+	padding: 1em 1em 0 1em;
+	background-color: rgb(238, 238, 238);
+	color: rgb(34, 34, 34);
+}
+figure {
+	width:100%;
+	margin: 0;
+	margin-left: 0em;
+}
+
+aside {
+    flex: 1 0 15em;
+	padding: 0 0 0 0.5em;
+}
+
+aside section {
+	padding: 1em;
+	background-color: rgb(238, 238, 238);
+	color: rgb(34, 34, 34);
+	margin-bottom: 1em;
+	block-size: auto;
+	padding: 1em 1em 1em 1em;
+}
+
+.parent-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+footer {
+    flex: 1 0 100%;
+	color: rgb(34, 34, 34);
+	border-top: 0.5px solid rgb(34, 34, 34);
+	margin-top: 2em;
+}
