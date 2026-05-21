@@ -5,7 +5,9 @@ html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
 div.container, div.home-container {
     max-width: 45em;
     margin: auto;
-    background: rgb(255, 255, 255);
+    background: rgb(255, 248, 247);
+    padding: 0 1em;
+
 }
 
 img {
@@ -14,29 +16,38 @@ img {
 }
 
 header {
-    background: rgb(255, 255, 255);
+    background: rgb(255, 248, 247);
     padding: 1em 0.5em;
 }
 
+html,
+body {
+    background: rgb(255, 248, 247);
+}
+
 h1 {
-	width: 7em;
+	width: 13em;
     margin: 0;
 	}
 
 h2 {
-    font-family: serif;
-    font-size: 2em;
+    font-family:"itc-fenice",serif;
+	font-style:normal;
+    font-weight: 300;
+    font-size: 2rem;
     font-weight: bold;
-    color: rgb(86, 118, 153);
+    color: rgb(233, 78, 158);
     margin: 0.5em 0.5em 0 0;
     padding-left: 0.15em;
 }
 
 h3 {
-    font-family: serif;
-    font-size: 1.15em;
+    font-family:"itc-fenice",serif;
+	font-style: normal;
+    font-weight: 300;
+    font-size: 1.15rem;
     font-weight: bold;
-    color: rgb(86, 118, 153);
+    color: rgb(233, 78, 158);
 }
 
 h2.secondary {
@@ -48,7 +59,7 @@ h3.tertiary {
 }
 
 nav {
-    background: rgb(255, 255, 255);
+    background: rgb(255, 248, 247);
     padding-top: 1.7em;
 }
 nav ul {
@@ -63,34 +74,54 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: rgb(86, 118, 153);
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 1.35em;
+    color: rgb(137, 25, 45);
+    font-family: "aabak", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 2.2rem;
 }
 
 figcaption {
-    font-family: sans-serif;
-    font-size: 1em;
+    font-family: "itc-fenice", serif;
+    font-weight: 700;
     font-style: italic;
+    font-size: 1rem;
     margin: 0.5em 0.5em 1em 0.5em;
-    color:rgb(85, 85, 85)
+    color:rgb(137, 25, 45);
 }
 
 a {
     text-decoration: none;
-    color: rgb(35, 35, 35);
+    color: rgb(17, 17, 17);
 }
 
 p {
-    font-family: sans-serif;
-    font-size: 1em;
+    font-family:"itc-fenice",serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
     line-height: 1.3em;
     margin-top: 0;
+    padding: 0 0 1em 0;
 }
 
+main,
+article,
+aside {
+    display: block;
+}
+
+section {
+    margin-bottom: 1.5em;
+}
+
+figure {
+    margin-bottom: 0.75em;
+}
+
+
 article {
-    background: rgb(255, 255, 255);
+    background: rgb(255, 248, 247);
 }
 
 article h2 {
@@ -102,27 +133,27 @@ main h2 {
 }
     
 section.tertiary-teaser h3 {
-    border-top: 2px solid rgb(86, 118, 153);
+    border-top: 2px solid rgb(242, 139, 179);
     padding-top: 0.25em;
     padding: 0.5em 0 0.25em 0;
 }
 
 section.mainstory-teaser h2,
 article h2 {
-    font-size: 2.5em;
-    padding: none;
+    font-size: 2.5rem;
+    padding: 0;
 }
 
 section.secondary-teaser h2.secondary {
-    padding-left: none;
+    padding-left: 0;
 }
 
 section.mainstory-teaser img {
-    padding-bottom: none;
+    padding-bottom: 0;
 }
 
 section.secondary-teaser h2 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     padding: 0;
 }
 
@@ -131,27 +162,31 @@ section.secondary-teaser p {
 }    
 
 aside {
-    background: rgb(204, 206, 255);
+    background: rgb(246, 214, 222);
     padding: 1em 0.5em 0 0.5em;
 }
 
 footer {
-    background: rgb(86, 118, 153);
-    color: rgb(238, 238, 238);
+    background: rgb(246, 214, 222);
+    color: rgb(137, 25, 45);
     padding: 1em 0 0 0.45em;
-    font-size: 1em;
+    font-family:"itc-fenice",serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
 }
 
 @media only screen and (min-width: 40em) {
     nav ul li {
     display: inline-block;
+    font-size: 1.5rem;
     margin-right: 1.5em;
     margin-bottom: 0;
     }
     
     p {
-    font-family: sans-serif;
-    font-size: 1em;
+    font-family:"itc-fenice",serif;
+    font-size: 1rem;
     padding: 0.1em 0.1em 1em 0;
 
 }
@@ -162,7 +197,7 @@ footer {
     h3.tertiary {
     padding-left: 0.5em;
 }
-
+}
 @media only screen and (min-width: 60em) {    
     div.home-container {
     max-width: 80em;
@@ -233,5 +268,4 @@ footer {
     section.mainstory-teaser a p {
         flex: 0 0 4em;
     }
-}
 }
