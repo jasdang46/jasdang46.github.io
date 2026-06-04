@@ -10,6 +10,11 @@ div.container, div.home-container, div.newsletter-container {
 
 }
 
+h1 {
+	width: 13em;
+    margin: 0;
+	}
+
 img {
     width: 100%;
     display: block;
@@ -24,11 +29,6 @@ html,
 body {
     background: rgb(255, 248, 247);
 }
-
-h1 {
-	width: 13em;
-    margin: 0;
-	}
 
 h2 {
     font-family:"itc-fenice",serif;
@@ -180,7 +180,7 @@ div.photogallery-container{
 }
 
 div.photogallery-container h2 {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.3em;
     font-size: 1.7em;
 }
 
@@ -211,7 +211,7 @@ input:nth-of-type(9):checked ~ main figure:nth-of-type(9) {
 
 div.photogallery-container nav {
     display: flex;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto;
     grid-gap: 0.2em;
 }
 
@@ -221,15 +221,15 @@ div.photogallery-container input {
 
 div.photogallery-container main {
     position: relative;
-    overflow: hidden;
-    height: 72vh;
-    padding-bottom: 8em;
+    overflow: visible;
+    height: 66vw;
+    padding-bottom: 1em;
     display: block;
 }
 
 div.photogallery-container figure {
     margin: 0;
-    width: calc(100%-2em);
+    width: calc(100% - 2em);
     position: absolute;
     opacity: 0;
     transition: opacity 0.5s;
@@ -258,6 +258,7 @@ div.newsletter-container form {
     padding: 1.5em;
     margin: 1em 0;
 }
+
 div.newsletter-container input[type="text"],
 div.newsletter-container input[type="email"],
 div.newsletter-container input[type="tel"],
@@ -367,8 +368,16 @@ footer {
     h3.tertiary {
     padding-left: 0.5em;
 }
+
+div.photogallery-container main {
+    position: relative;
+    overflow: visible;
+    height: 80vh;
+    padding-bottom: 2em;
+    display: block;
 }
-@media only screen and (min-width: 60em) {    
+}
+@media only screen and (min-width: 60em) {
     div.home-container {
     max-width: 80em;
     padding: 0 1em;
@@ -438,3 +447,104 @@ div.home-container main {
         flex: 0 0 4em;
     }
 }
+/* DARK MODE START*/
+@media screen and (prefers-color-scheme: dark) {
+h1 {
+    background-image: url("the-drop-logo-2.svg");  
+    background-repeat: no-repeat;  
+    background-size: contain;  
+} 
+
+    h1 img {  
+        opacity: 0;  
+    }
+    
+    html,
+    body,
+    div.container,
+    div.home-container,
+    div.photogallery-container,
+    div.newsletter-container,
+    header,
+    nav,
+    article {
+        background: rgb(20, 15, 20);
+    }
+
+    h2,
+    h3 {
+        color: rgb(255, 137, 190);
+    }
+
+    p,
+    a,
+    section.personal-info label,
+    section.subscribe label,
+    section.subscription label,
+    section.payment label {
+        color: rgb(255, 245, 248);
+    }
+
+    nav ul li a,
+    figcaption {
+        color: rgb(255, 190, 215);
+    }
+
+    nav ul li a:hover,
+    nav ul li a:active {
+        color: rgb(255, 95, 170);
+    }
+
+    aside,
+    footer,
+    div.newsletter-container form,
+    div.newsletter-container form.newsletter-form {
+        background: rgb(55, 28, 45);
+    }
+
+    section.personal-info,
+    section.subscribe,
+    section.subscription,
+    section.payment {
+        background: rgb(35, 25, 32);
+    }
+
+    section.tertiary-teaser h3 {
+        border-top: 2px solid rgb(255, 137, 190);
+    }
+
+    div.photogallery-container figcaption {
+    font-family: "itc-fenice", serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1rem;
+    color:rgb(255, 190, 215);
+    }
+
+    div.newsletter-container button {
+        background: rgb(255, 137, 190);
+        color: rgb(20, 15, 20);
+    }
+
+    div.newsletter-container button:hover {
+        background: rgb(255, 190, 215);
+    }
+    
+    div.newsletter-container nav ul li a {
+        color: rgb(255, 190, 215);
+    }
+
+    div.newsletter-container nav ul li a:hover,
+    div.newsletter-container nav ul li a:active {
+        color: rgb(255, 95, 170);
+    }
+
+    footer {
+        color: rgb(255, 190, 215);
+    }
+    
+    figcaption {
+        color: rgb(255, 190, 215);
+    }
+    
+}/* DARK MODE END*/
